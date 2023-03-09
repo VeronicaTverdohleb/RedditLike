@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditLike", "RedditLike\RedditLike.csproj", "{263267E8-AABA-4914-B717-4F30329884A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RedditLikeApp", "RedditLikeApp", "{9F7A2A79-EF1E-4610-B1D1-13EF4E6CD6DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{263267E8-AABA-4914-B717-4F30329884A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263267E8-AABA-4914-B717-4F30329884A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263267E8-AABA-4914-B717-4F30329884A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263267E8-AABA-4914-B717-4F30329884A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{263267E8-AABA-4914-B717-4F30329884A3} = {9F7A2A79-EF1E-4610-B1D1-13EF4E6CD6DD}
+	EndGlobalSection
+EndGlobal
