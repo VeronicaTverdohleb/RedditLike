@@ -1,0 +1,17 @@
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\bin\Debug\net7.0\FileData.deps.json
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\bin\Debug\net7.0\FileData.dll
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\bin\Debug\net7.0\FileData.pdb
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\bin\Debug\net7.0\Application.dll
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\bin\Debug\net7.0\Shared.dll
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\bin\Debug\net7.0\Application.pdb
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\bin\Debug\net7.0\Shared.pdb
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\FileData.csproj.AssemblyReference.cache
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\FileData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\FileData.AssemblyInfoInputs.cache
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\FileData.AssemblyInfo.cs
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\FileData.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\FileData.csproj.CopyComplete
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\FileData.dll
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\refint\FileData.dll
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\FileData.pdb
+C:\Users\Bruger\RiderProjects\RedditLike\FileData\obj\Debug\net7.0\ref\FileData.dll

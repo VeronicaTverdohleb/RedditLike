@@ -1,0 +1,152 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "UserName": "Veronica",
+      "Password": "cats3",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 2,
+      "UserName": "Cedric",
+      "Password": "sigmar",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 3,
+      "UserName": "Devlin",
+      "Password": "sigr",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 4,
+      "UserName": "Maria",
+      "Password": "123456",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 5,
+      "UserName": "Maxim",
+      "Password": "123456",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 6,
+      "UserName": "Ana",
+      "Password": "kit123@",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 7,
+      "UserName": "Petra",
+      "Password": "tiktok",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 8,
+      "UserName": "Papp",
+      "Password": "sucks",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 9,
+      "UserName": "Pappito",
+      "Password": "sucks",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 10,
+      "UserName": "Mihai",
+      "Password": "theBest",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 11,
+      "UserName": "Marinela",
+      "Password": "redditPass",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 12,
+      "UserName": "Andy",
+      "Password": "cats345",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 13,
+      "UserName": "Mommy",
+      "Password": "please",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    },
+    {
+      "Id": 14,
+      "UserName": "Veronica123",
+      "Password": "456TV",
+      "Domain": "Redditor",
+      "SecurityLevel": 0
+    }
+  ],
+  "Posts": [
+    {
+      "Id": 4,
+      "Owner": {
+        "Id": 12,
+        "UserName": "Andy",
+        "Password": "cats345",
+        "Domain": "Redditor",
+        "SecurityLevel": 0
+      },
+      "Title": "AITA for lying to my mom?",
+      "Body": "kjndcjfvnkfmvldmckdnjvbjvbnbvnxbvnmnvkldsjdkjodjolcjldjkdnmdnmnmcndb "
+    },
+    {
+      "Id": 3,
+      "Owner": {
+        "Id": 1,
+        "UserName": "Veronica",
+        "Password": "cats3",
+        "Domain": "Redditor",
+        "SecurityLevel": 0
+      },
+      "Title": "eww",
+      "Body": "wwwwwwwwwwww"
+    },
+    {
+      "Id": 5,
+      "Owner": {
+        "Id": 13,
+        "UserName": "Mommy",
+        "Password": "please",
+        "Domain": "Redditor",
+        "SecurityLevel": 0
+      },
+      "Title": "I am tired",
+      "Body": "This was so unsitysfying idk how to spell shit anymore helpppp"
+    },
+    {
+      "Id": 6,
+      "Owner": {
+        "Id": 14,
+        "UserName": "Veronica123",
+        "Password": "456TV",
+        "Domain": "Redditor",
+        "SecurityLevel": 0
+      },
+      "Title": "knkd,vmmc,ld,ldkm",
+      "Body": "dnkdnbkjl  cksnckd nvdonvk lndcldnld vkncsk\u00E6sml \u00E6lm\u00E6l "
+    }
+  ]
+}

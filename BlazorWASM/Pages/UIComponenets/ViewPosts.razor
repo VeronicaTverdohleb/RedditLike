@@ -1,0 +1,153 @@
+﻿@page "/ViewPosts"
+@attribute [Authorize]
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@inject IPostService todoService
+@inject NavigationManager navMgr
+<h3>ViewPosts</h3>
+
+<div class="filter-bar">
+    <div class="filters-container">
+        <img src="icons/@(doShowFilters ? "clear_" : "")funnel.png" class="funnel" @onclick="@(() => doShowFilters = !doShowFilters)" alt="Funnel"/>
+        @if (doShowFilters)
+        {
+            <div class="filter">
+                <label>Username:</label>
+                <input type="text" @bind="usernameFilter"/>
+            </div>
+            <div class="filter">
+                <label>User id:</label>
+                <input type="number" @bind="userIdFilter"/>
+            </div>
+            <div class="filter">
+                <label>Title contains:</label>
+                <input type="text" @bind="titleContainsFilter"/>
+            </div>
+        }
+    </div>
+</div>
+
+<div>
+    <button @onclick="LoadPosts">Load</button>
+</div>
+
+
+@if (todos == null)
+{
+}
+else if (!todos.Any())
+{
+    <p>No Posts to display</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Post ID</th>
+            <th>Owner ID</th>
+            <th>Title</th>
+            <th>Edit</th>
+            <th>View</th>
+            <th>Delete?</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in todos)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Owner.UserName</td>
+                <td>@item.Title</td>
+                <td>
+                    <img src="icons/edit.gif" class="funnel" @onclick="@(() => navMgr.NavigateTo($"/EditPost/{item.Id}"))"/>
+                </td>
+                <td>
+                    <img src="icons/view.png" class="funnel" @onclick="@(() => navMgr.NavigateTo($"/ViewSelectedPost/{item.Id}"))"/>
+                </td>
+                <td>
+                    <label @onclick="@(() => RemoveTodo(item.Id))" style="cursor:pointer; color: red; font-weight: bold">
+                        &#x2717;
+                    </label>
+                    </td>
+                
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+@if (!string.IsNullOrEmpty(msg))
+{
+    <label style="color: red">@msg</label>
+}
+
+@code {
+    private IEnumerable<Post>? todos;
+    private string msg = "";
+    private bool doShowFilters = false;
+
+    private string? usernameFilter;
+    private int? userIdFilter;
+    private string? completedStatusFilter;
+    private string? titleContainsFilter;
+
+    private async Task LoadPosts()
+    {
+        try
+        {
+            todos = await todoService.GetAsync(usernameFilter, userIdFilter, completedStatusFilter, titleContainsFilter);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+    /*private async Task LoadTodos()
+    {
+        try
+        {
+            todos = await todoService.GetAsync(null, null, null, null);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+    private async Task CompleteTodo(Post item, bool status)
+    {
+        PostUpdateDto dto = new(item.Id)
+        {
+            IsCompleted = status
+        };
+    
+        try
+        {
+            await todoService.UpdateAsync(dto);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }*/ 
+    private async Task RemoveTodo(int todoId)
+    {
+        msg = "";
+        try
+        {
+            await todoService.DeleteAsync(todoId);
+        
+            var list = new List<Post>(todos!);
+            list.RemoveAll(todo => todo.Id == todoId);
+            todos = list.AsEnumerable();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+    
+}

@@ -1,0 +1,62 @@
+﻿@page "/CreateUser"
+@using global::Shared.DTOs
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@using BlazorWASM.Services
+@inject IAuthService authService
+@inject IUserService userService;
+@inject NavigationManager navMgr
+<div class="card">
+    <h3>Create User</h3>
+    <div class="form-group field">
+        <label>User name:</label>
+        <input type="text" @bind="username" @bind:event="oninput"/>
+        @if (!string.IsNullOrEmpty(resultMsg))
+        {
+            <label style="color: @color">@resultMsg</label>
+        }
+        <label>Password :</label>
+                <input type="text" @bind="password" @bind:event="oninput"/>
+                @if (!string.IsNullOrEmpty(resultMsg))
+                {
+                    <label style="color: @color">@resultMsg</label>
+                }
+    </div>
+    <div class="button-row">
+        <button @onclick="Create" disabled="@(string.IsNullOrEmpty(username))" class="acceptbtn">Create</button>
+    </div>
+</div>
+
+@code {
+    private string username = "";
+    private string password = "";
+    private string domain = "Redditor";
+    private string resultMsg = "";
+    private string color = "";
+    
+    private async Task Create()
+    {
+        resultMsg = "";
+        User user = new User
+        {
+            UserName = username,
+            Password = password,
+            Domain = "Redditor"
+        };
+        try
+        {
+          
+            await userService.Create(new UserCreationDto(username, domain,password));
+            //await authService.RegisterAsync(user);
+            username = "";
+            resultMsg = "User successfully created";
+            color = "green";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            resultMsg = e.Message;
+            color = "red";
+        }
+    }
+}

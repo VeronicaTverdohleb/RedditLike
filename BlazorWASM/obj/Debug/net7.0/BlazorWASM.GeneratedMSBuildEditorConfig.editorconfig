@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazorWASM
+build_property.RootNamespace = BlazorWASM
+build_property.ProjectDir = C:\Users\Bruger\RiderProjects\RedditLike\BlazorWASM\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Bruger\RiderProjects\RedditLike\BlazorWASM
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/CreatePost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xDcmVhdGVQb3N0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/CreateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xDcmVhdGVVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/EditPost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xFZGl0UG9zdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/ViewSelectedPost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xWaWV3U2VsZWN0ZWRQb3N0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-j4esj19db2
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/LoginButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xMb2dpbkJ1dHRvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-n6adnwxrqc
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/ViewPosts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xWaWV3UG9zdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-smehi01hd3
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Pages/UIComponenets/ViewUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVUlDb21wb25lbmV0c1xWaWV3VXNlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-prei1vzavc
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jk00ermrez
+
+[C:/Users/Bruger/RiderProjects/RedditLike/BlazorWASM/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-69rflur3ak

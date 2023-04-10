@@ -1,0 +1,77 @@
+﻿@page "/ViewSelectedPost/{id:int}"
+@attribute [Authorize]
+@using HttpClients.ClientInterfaces
+@using Microsoft.AspNetCore.Components
+@using global::Shared.Models
+@using global::Shared.DTOs
+@inject IPostService todoService
+@inject IUserService userService
+@inject NavigationManager navMgr
+<h3>View Selected Post</h3>
+
+<div class="card">
+@if (users == null)
+    {
+        <label>Loading users...</label>
+    }
+    else if (!users.Any())
+    {
+        <label>No users, you cannot create a Post</label>
+    }
+    else if (dto == null)
+    {
+        <label>Loading post data..</label>
+    }
+    else
+    {
+        <h3>View Selected Post</h3>
+        <div class="form-group field">
+            <label>Title:</label>
+            <textarea  type="text" rows="1" cols="50" @bind="dto.Title"/>
+        </div>
+        <div class="form-group field">
+            <label>Text:</label>
+            <textarea rows="4" cols="50" @bind="dto.Body"/>
+        </div>
+    }
+@if (!string.IsNullOrEmpty(msg))
+{
+    <label style="color: red">@msg</label>
+}
+</div>
+
+
+        
+       
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private PostUpdateDto dto = null!;
+    private string msg = "";
+    private IEnumerable<User>? users;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        try
+        {
+            users = await userService.GetUsers();
+            PostBasicDto todoData = await todoService.GetByIdAsync(Id);
+            User currentlyAssigned = users.First(user => user.UserName.Equals(todoData.OwnerName));
+
+            dto = new(Id)
+            {
+                Title = todoData.Title,
+                OwnerId = currentlyAssigned.Id,
+                Body=todoData.Body
+            };
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    } 
+    
+}
