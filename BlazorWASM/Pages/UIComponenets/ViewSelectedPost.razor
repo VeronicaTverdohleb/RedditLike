@@ -9,7 +9,7 @@
 @inject NavigationManager navMgr
 <h3>View Selected Post</h3>
 
-<div class="card">
+<div class="card1">
 @if (users == null)
     {
         <label>Loading users...</label>
@@ -24,14 +24,13 @@
     }
     else
     {
-        <h3>View Selected Post</h3>
         <div class="form-group field">
             <label>Title:</label>
-            <textarea  type="text" rows="1" cols="50" @bind="dto.Title"/>
+            <textarea  type="text" rows="1" cols="50" @bind="dto.Title" readonly/>
         </div>
         <div class="form-group field">
             <label>Text:</label>
-            <textarea rows="4" cols="50" @bind="dto.Body"/>
+            <textarea rows="4" cols="50" @bind="dto.Body" readonly/>
         </div>
     }
 @if (!string.IsNullOrEmpty(msg))
@@ -48,6 +47,7 @@
     public int Id { get; set; }
 
     private PostUpdateDto dto = null!;
+   
     private string msg = "";
     private IEnumerable<User>? users;
     
@@ -57,7 +57,7 @@
         try
         {
             users = await userService.GetUsers();
-            PostBasicDto todoData = await todoService.GetByIdAsync(Id);
+           PostBasicDto todoData = await todoService.GetByIdAsync(Id);
             User currentlyAssigned = users.First(user => user.UserName.Equals(todoData.OwnerName));
 
             dto = new(Id)

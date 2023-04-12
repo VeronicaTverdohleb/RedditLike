@@ -4,12 +4,13 @@
 @using global::Shared.Models
 @using global::Shared.DTOs
 @using global::Shared.Dtos
+@using BlazorWASM.Services
 @inject IUserService userService
 @inject IPostService todoService
 @inject NavigationManager navMgr
 <h3>Create Post</h3>
 
-<div class="card">
+<div class="card1">
     @if (users == null)
     {
         <label>Loading users...</label>
@@ -29,8 +30,10 @@
              <textarea rows="4" cols="50" @bind="body"/>
         </div>
        <div class="form-group field">
-            <label>Assignee:</label>
-           <input type="text" @bind="selectedUserId"/>
+           <label>Assignee:</label>
+           <input type="text"  @bind="selectedUser"/>
+           
+           
             
         </div>
         <div class="button-row">
@@ -44,8 +47,14 @@
 </div>
 
 @code {
+    [Parameter]
+    public int Id { get; set; }
     private IEnumerable<User>? users;
-    private int? selectedUserId;
+    private User user1;
+    private UserLoginDto loginDto= null!;
+    private PostCreationDto dto = null!;
+        //<input type="text" @bind="selectedUserId"/>
+    private int? selectedUser;
     private string postTitle = "";
     private string body = "";
 
@@ -56,8 +65,16 @@
         msg = "";
         try
         {
+            
             users = await userService.GetUsers();
-            //selectedUserId = await todoService.GetByIdAsync();
+            //user1 = await userService.GetUserById(Id);
+            //User toAssign = users.First(user => user.UserName.Equals(user1.UserName));
+
+            /*dto = new(Id, postTitle, body)
+            {
+                OwnerId = toAssign.Id
+            };*/
+    //selectedUserId = await userService.GetUserById(Id);
         }
         catch (Exception e)
         {
@@ -69,7 +86,7 @@
     private async Task Create()
     {
         msg = "";
-        if (selectedUserId == null)
+        if (selectedUser == null)
         {
             msg = "You must select an assignee!";
             return;
@@ -87,9 +104,10 @@
 
         try
         {
-            PostCreationDto dto = new((int)selectedUserId, postTitle, body);
+            PostCreationDto dto = new((int)selectedUser, postTitle, body);
             await todoService.CreateAsync(dto);
-            navMgr.NavigateTo("/");
+            navMgr.NavigateTo("/Logged");
+            msg = "Post created successfully";
         }
         catch (Exception e)
         {

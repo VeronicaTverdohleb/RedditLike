@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\img\\Logout.png"
     },
     {
+      "Id": "C:\\Users\\Bruger\\RiderProjects\\RedditLike\\BlazorWASM\\wwwroot\\img\\Myproject.png",
+      "PackagePath": "staticwebassets\\img\\Myproject.png"
+    },
+    {
       "Id": "C:\\Users\\Bruger\\RiderProjects\\RedditLike\\BlazorWASM\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

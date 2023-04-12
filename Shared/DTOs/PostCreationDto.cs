@@ -2,7 +2,7 @@
 
 public class PostCreationDto
 {
-    public int OwnerId { get; }
+    public int OwnerId { get; set; }
     public string Title { get; }
     public string Body { get; }
 

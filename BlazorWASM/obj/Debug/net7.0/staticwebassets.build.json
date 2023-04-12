@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IVaJ8U5cRyNXSLzld9qDkfWxwo3i26OtPt7smAEqgR4=",
+  "Hash": "PBAykcdXarIYG0aNYm72ipzD5+fkg0ZD1t9Qr8nTftk=",
   "Source": "BlazorWASM",
   "BasePath": "/",
   "Mode": "Root",
@@ -7427,6 +7427,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Logout.png"
+    },
+    {
+      "Identity": "C:\\Users\\Bruger\\RiderProjects\\RedditLike\\BlazorWASM\\wwwroot\\img\\Myproject.png",
+      "SourceId": "BlazorWASM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bruger\\RiderProjects\\RedditLike\\BlazorWASM\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "img/Myproject.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Myproject.png"
     },
     {
       "Identity": "C:\\Users\\Bruger\\RiderProjects\\RedditLike\\BlazorWASM\\wwwroot\\index.html",

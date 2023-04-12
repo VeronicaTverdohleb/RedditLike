@@ -9,7 +9,7 @@
 @inject NavigationManager navMgr
 <h3>EditPost</h3>
 
-<div class="card">
+<div class="card1">
     @if (users == null)
     {
         <label>Loading users...</label>
@@ -24,7 +24,6 @@
     }
     else
     {
-        <h3>Update Post</h3>
         <div class="form-group field">
             <label>Title:</label>
             <textarea  type="text" rows="1" cols="50" @bind="dto.Title"/>

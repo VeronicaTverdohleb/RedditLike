@@ -1,4 +1,5 @@
 /* /Pages/UIComponenets/Login.razor.rz.scp.css */
+
 .card[b-j4esj19db2] {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -14,7 +15,7 @@
 }
 
 .loginbtn[b-j4esj19db2] {
-    background-color:lightgreen;
+    background-color:#FF4500;
     border-radius: 5px;
     padding: 5px;
     padding-left: 10px;
@@ -72,11 +73,11 @@ main[b-jk00ermrez] {
 }
 
 .sidebar[b-jk00ermrez] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, 	#FF5700 0%, 	#FF5700 70%);
 }
 
 .top-row[b-jk00ermrez] {
-    background-color: #f7f7f7;
+    background-color: 	#FF5700;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
@@ -84,17 +85,17 @@ main[b-jk00ermrez] {
     align-items: center;
 }
 
-    .top-row[b-jk00ermrez]  a, .top-row[b-jk00ermrez]  .btn-link {
+.top-row[b-jk00ermrez]  a, .top-row[b-jk00ermrez]  .btn-link {
         white-space: nowrap;
         margin-left: 1.5rem;
         text-decoration: none;
     }
 
-    .top-row[b-jk00ermrez]  a:hover, .top-row[b-jk00ermrez]  .btn-link:hover {
+.top-row[b-jk00ermrez]  a:hover, .top-row[b-jk00ermrez]  .btn-link:hover {
         text-decoration: underline;
     }
 
-    .top-row[b-jk00ermrez]  a:first-child {
+.top-row[b-jk00ermrez]  a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -108,7 +109,7 @@ main[b-jk00ermrez] {
         justify-content: space-between;
     }
 
-    .top-row[b-jk00ermrez]  a, .top-row[b-jk00ermrez]  .btn-link {
+    .top-row[b-jk00ermrez]  a, .top-row[b-jk00ermrez]  .btn-link{
         margin-left: 0;
     }
 }
@@ -131,7 +132,7 @@ main[b-jk00ermrez] {
         z-index: 1;
     }
 
-    .top-row.auth[b-jk00ermrez]  a:first-child {
+    .top-row.auth  a:first-child[b-jk00ermrez] {
         flex: 1;
         text-align: right;
         width: 0;
@@ -145,15 +146,18 @@ main[b-jk00ermrez] {
 /* /Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-69rflur3ak] {
     background-color: rgba(255, 255, 255, 0.1);
+    /*background-color: 	#FF8700;*/
 }
 
 .top-row[b-69rflur3ak] {
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
+    /*background-color: orange;*/
 }
 
 .navbar-brand[b-69rflur3ak] {
-    font-size: 1.1rem;
+    font-size: 2.3rem;
+  
 }
 
 .oi[b-69rflur3ak] {
@@ -161,23 +165,29 @@ main[b-jk00ermrez] {
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
+    color: white;
 }
 
+
 .nav-item[b-69rflur3ak] {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    color: white;
     padding-bottom: 0.5rem;
+  
 }
 
     .nav-item:first-of-type[b-69rflur3ak] {
         padding-top: 1rem;
+       
     }
 
     .nav-item:last-of-type[b-69rflur3ak] {
         padding-bottom: 1rem;
+       
     }
 
-    .nav-item[b-69rflur3ak]  a {
-        color: #d7d7d7;
+    .nav-item[b-69rflur3ak], a[b-69rflur3ak] {
+        color: white;
         border-radius: 4px;
         height: 3rem;
         display: flex;
@@ -186,13 +196,21 @@ main[b-jk00ermrez] {
     }
 
 .nav-item[b-69rflur3ak]  a.active {
-    background-color: rgba(255,255,255,0.25);
+    background-color:	#FF5700;
     color: white;
+   
 }
 
 .nav-item[b-69rflur3ak]  a:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: 	#FF5700;
     color: white;
+    
+}
+
+.logo[b-69rflur3ak]{
+    width:50px;
+    height:50px;
+    
 }
 
 @media (min-width: 641px) {

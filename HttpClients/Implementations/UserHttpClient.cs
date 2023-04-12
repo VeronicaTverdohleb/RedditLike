@@ -52,4 +52,22 @@ public class UserHttpClient : IUserService
         })!;
         return users;
     }
+
+    public async Task<User> GetUserById(int id)
+    {
+        HttpResponseMessage response = await client.GetAsync($"/users/{id}");
+        string content = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+
+        User user = JsonSerializer.Deserialize<User>(content, 
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            }
+        )!;
+        return user;
+    }
 }
